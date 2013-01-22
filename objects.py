@@ -5,7 +5,7 @@ obj = [] # 0 = Snake Parts
          # 1 = Points
          # 2 = Snake
          
-time = [0] # To make time easy to modify and be global
+time = [0] # To make time global and be accessible by different modules
 
 def countUp():
     time[0] += 1
@@ -46,7 +46,7 @@ class Snake(object):
             self.newBody = None        
             
     def update(self):
-        # Got a point
+        # Ate a point
         if len(pygame.sprite.spritecollide(self.head, obj[1], True)) > 0:
             sprites = self.body.sprites()
             self.newBody = Body(sprites[-1].rect.x, sprites[-1].rect.y)

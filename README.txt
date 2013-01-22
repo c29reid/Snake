@@ -1,4 +1,4 @@
-This is a snake game programmed in python 2.7 using pygame
+This is a snake game written in python 2.7 using pygame
 
 Requirements:
   - Python 2.X should work

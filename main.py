@@ -9,6 +9,7 @@
 
 # TODO
 #   - Add funcion docstring comments
+#   - Add main menu and high score
 import screen, pygame, objects, random
 from pygame.locals import *
 
